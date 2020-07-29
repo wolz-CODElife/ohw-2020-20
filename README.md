@@ -8,11 +8,11 @@
 * YouTube video of how to prepare the selected meal. 
 
 ## Tools
-Bootstrap 
+[Bootstrap](https://getbootstrap.com/)
 
-PHP
+[PHP](https://www.php.net/)
 
-ThemealDB - API
+[ThemealDB - API](https://www.themealdb.com/api.php)
 
 ## Contributions
 Fork this repository 
