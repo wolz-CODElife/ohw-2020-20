@@ -1,0 +1,229 @@
+/* Font import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap');
+
+/* Global Variables */
+:root{
+    --bg-primary: #FDBC2E;
+    --bg-dark: rgba(0, 0, 0, 0.73);
+    --dark-grey: rgba(0, 0, 0, 0.65);
+    --white: rgb(255,255,255);
+    --montserat: 'Montserrat', sans-serif;
+}
+
+/* Global Styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--montserat);
+}
+
+.navbar-brand{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    z-index: 999999;
+}
+
+h1{
+    font-family: var(--montserat);
+    font-size: 48px;
+    color: var(--white);
+    line-height: 59px;
+    text-align: center;
+}
+
+h2{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--bg-dark);
+}
+
+h4{
+    position: relative;
+    z-index: 11;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: rgb(255, 255, 255, .6);
+    margin-bottom: 16px;
+}
+
+p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--dark-grey);
+}
+
+.btn{
+    width: 200px;
+    height: 61px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    border: none;
+    border-radius: 0;
+    transition: all .65s ease-in-out;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--dark-grey);
+}
+
+.bg-primary{
+    background-color: var(--bg-primary) !important;
+}
+
+.color-primary{
+    color: var(--bg-primary);
+}
+
+/* Hero Section */
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/hero_image.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-dark);
+    z-index: 1;
+}
+
+.hero h1, .hero p, .hero button{
+    position: relative;
+    z-index: 2;
+}
+
+.button-group{
+    display: flex;
+}
+
+.hero .btn{
+    color: var(--white);
+    margin-top: 24px;
+    margin-right: 8px;
+}
+
+.btn-outline{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin-left: 8px;
+    display: none;
+}
+
+.hero .btn:hover,
+.hero .btn:focus{
+    background-color: var(--bg-primary) !important;
+    border-bottom: 7px solid #fff;
+}
+
+/* Meal Section */
+.meal{
+    margin-top: 56px;
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.meal img{
+    height: 583px;
+    width: 100%;
+}
+
+.meal--categories{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.meal--categories h6{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 13px;
+    color: var(--dark-grey);
+}
+
+.meal--category h6{
+    font-weight: 600;
+}
+
+/* meal video */
+.meal--video video{
+    width: 100%;
+    background: var(--dark-grey);
+    margin-top: 56px;
+}
+
+
+@media (max-width: 576px) { 
+    h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    h2{
+        font-size: 24px;
+        line-height: 27px;
+    }
+    
+    h3{
+        font-size: 24px;
+        line-height: 27px;
+    }
+    
+    h4{
+        font-size: 16px;
+        line-height: 29px;
+    }
+    
+    p{
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .meal img{
+        height: 300px;
+    }
+
+    .meal h2{
+        margin-top: 24px;
+    }
+
+    .btn{
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
