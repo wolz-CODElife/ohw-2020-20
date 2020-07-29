@@ -28,8 +28,8 @@ Make your contribution, save it, then run the following  command in bash
 
 `$ git checkout -b <your-username>`
 
-`$ git pull origin master`
+`$ git merge origin/development`
 
-`$ git push origin <your-username> : development`
+`$ git push origin <your-username>:development`
 
 Then create a new pull request with the development branch on https://github.com/DSC-Unilag/ohw-2020-20.git
