@@ -179,9 +179,10 @@ li{
     font-weight: 600;
 }
 
-/* meal video */
-.meal--video video{
+/* meal iframe */
+.meal--video iframe{
     width: 100%;
+    min-height: 60vh;
     background: var(--dark-grey);
     margin-top: 56px;
 }
@@ -219,6 +220,9 @@ li{
 
     .meal h2{
         margin-top: 24px;
+    }
+    .meal--video iframe{
+        min-height: 45vh;
     }
 
     .btn{
