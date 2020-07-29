@@ -2,6 +2,9 @@
 
 >This application  was inspired by Open Hack Week 2020, and was assigned to team ohw-2020-20
 
+## Demo
+[Visit Live Demo](http://mimeal.viddateck.com.ng)
+
 ## Features
 * A random meal selector.
 * Recipe of any selected Meal. 
