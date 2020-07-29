@@ -39,9 +39,6 @@
     <section class="meal"><br>
         <h2 class="text-center"><u>Your Meal Suggestion</u></h2><br><br>
 <?php
-
-// function fetchMeal()
-// {
     
     $getRandomMeal = file_get_contents('https://www.themealdb.com/api/json/v1/1/random.php');
     
@@ -100,26 +97,21 @@
             </div>
             <div class="row bg-dark">
                 <div class="col-md-12">
+                    <br>
                     <h3 class="text-white">Preparation</h3>
-                    <p class="text-light"><?php echo str_replace('.', '.<br><br> ', $meal['strInstructions']); ?></p>
+                    <p class="text-light">- <?php echo str_replace('.', '.<br><br>- ', $meal['strInstructions']); ?></p>
                 </div>
             </div>
         </div>
 
         <div class="meal--video">
             <div class="container">
-                <video src="<?php echo $meal['strYoutube']; ?>"></video>
+                <iframe src="<?php echo str_replace('watch?v=', 'embed/', $meal['strYoutube']); ?>"></iframe>
             </div>
         </div>
         <?php
         
     }
-// }
-
-// if (isset($_POST['fetch'])) {
-//     fetchMeal();
-// }
-
 
 ?>
 
