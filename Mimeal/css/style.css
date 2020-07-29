@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-image: url("/Images/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.select{
+    margin-top: 250px;
+    color:white;
+    width: 60%;
+    margin-right: 19%;
+    margin-left: 19%;
+}
