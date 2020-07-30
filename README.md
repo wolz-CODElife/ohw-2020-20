@@ -6,9 +6,9 @@
 [Visit Live Demo](http://mimeal.viddateck.com.ng)
 
 ## Features
-* A random meal selector.
-* Recipe of any selected Meal. 
-* YouTube video of how to prepare the selected meal. 
+* Randomly suggests  a meal
+* Shows a recipe of the meal
+* Uses a YouTube video to show you how to make the meal
 
 ## Tools
 [Bootstrap](https://getbootstrap.com/)
